@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+lint-staged
+lint-staged
+prettier --single-quote --trailing-comma all --tab-width 4 --write src/**/*.{js,json,scss} 
+lint-staged
+lint-staged
+npx lint-staged
+npm lint-staged
